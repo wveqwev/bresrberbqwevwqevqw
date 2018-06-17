@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
 
 *{
 	margin: 0;
@@ -13,6 +13,14 @@ body{
 	height: 100vh;
 	display: flex;
 	font-family: 'Roboto', sans-serif;
+}
+
+h2{
+	bottom: -10vh;
+	position: absolute;
+	font-weight: 100;
+	font-size: 1.5vw;
+	color: #000;
 }
 
 .black, .white{
@@ -60,6 +68,97 @@ body{
 
 .white{
 	color: black;
+}
+
+.modal{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	background: #fff;
+}
+
+.order{
+	display: flex;
+	width: 70vw;
+	height: 70vh;
+	background: #000;
+}
+
+.order div{
+	width: 35vw;
+	height: 70vh;
+
+}
+
+.product-type{
+	background: url(t-shirt-black.svg) #fff no-repeat center;
+	background-size: 20vw;
+}
+
+.product-order{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.product-order input{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #fff;
+	font-size: 2vw;
+	margin-top:5vh;
+	width: 25vw;
+	height: 7.5vh;
+	border: none;
+	border-bottom: solid #fff .2vh;
+	background: none;
+	text-align: center;
+}
+
+.product-order input[type=submit]{
+	font-size: 2vw;
+	background: #fff;
+	color: #000;
+	width: 25vw;
+	height: 10vh;
+	margin-top: 12vh;
+	cursor: pointer;
+	border: none;
+	transition: all .5s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+
+.product-order input[type=submit]:hover{
+	color: #fff;
+	background: rgba(255,255,255,.3);
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+   color: rgba(255,255,255,.8);
+}
+
+:-moz-placeholder {
+   text-align: center;  
+   color: rgba(255,255,255,.8);
+}
+
+::-moz-placeholder {
+	text-align: center;
+	color: rgba(255,255,255,.8);
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+   color: rgba(255,255,255,.8);
 }
 
 @media screen and (orientation:portrait) and (max-width: 600px){
