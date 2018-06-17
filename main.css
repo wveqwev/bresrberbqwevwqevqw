@@ -31,17 +31,17 @@ body{
 
 #t-shirt-black{
 	background: url('t-shirt-black.svg') center no-repeat;
-	background-size: 60%;
+	background-size: 60vh;
 }
 
 #t-shirt-white{
 	background: url('t-shirt-white.svg') center no-repeat;
-	background-size: 60%;
+	background-size: 60vh;
 }
 
 #t-shirt-black:hover, #t-shirt-white:hover{
 	transition: background .3s cubic-bezier(0, 1.75, 0.32, 1.28);
-	background-size: 70%;
+	background-size: 70vh;
 }
 
 #logo-black{
